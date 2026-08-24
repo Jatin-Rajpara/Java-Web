@@ -1,0 +1,12 @@
+
+Write a short comparison (3-4 sentences) between how JSP renders dynamic content (like your 'Welcome, {username}' page) and how React components handle dynamic rendering.
+Focus on syntax, data flow, and typical use cases.
+
+
+1. Syntax: JSP uses `${username}` or JSP expressions to display dynamic content, while React uses `{username}` inside JSX.
+
+2. Data Flow: In JSP, data usually comes from a Servlet through request/session attributes. In React, data generally comes through props or state.
+
+3. Rendering: JSP renders the page mainly on the server, while React dynamically updates components mainly on the client/browser.
+
+4. Use Cases: JSP is commonly used for traditional server-side web applications, while React is commonly used for interactive and Single Page Applications (SPAs).
