@@ -1,0 +1,103 @@
+
+# Custom JSP Tag Library – Follower Count
+
+A custom JSP tag library allows us to create our own JSP tags and use them like standard JSP tags. For example, instead of writing Java code to convert `1500` into `1.5K`, we can create a custom tag such as `<my:followers>`.
+
+--> Steps to Create It
+
+1. Create a Tag Handler class
+
+Create a Java class that contains the logic for formatting the follower count.
+
+For example:
+----------------
+1500 → 1.5K
+1500000 → 1.5M
+150 → 150
+----------------
+
+The class would receive the follower count as an attribute and generate the formatted output.
+
+2. Create a Tag Library Descriptor (TLD) file
+
+Create a `.tld` file that defines the custom tag.
+
+The TLD specifies:
+
+* Tag library information
+* Tag name
+* Tag handler class
+* Attributes accepted by the tag
+
+For example, the tag could be named:
+
+followers
+
+
+3. Place the TLD file in the correct location**
+
+The TLD file is normally placed inside:
+
+
+WEB-INF/
+
+
+or an appropriate subdirectory under `WEB-INF`.
+
+4. Declare the tag library in the JSP**
+
+Use the JSP taglib directive at the top of the JSP page:
+
+
+<%@ taglib prefix="my" uri="/WEB-INF/mytags.tld" %>
+
+
+Here:
+
+* `prefix="my"` → prefix used for our custom tags
+* `uri` → location/identifier of the tag library
+
+5. Use the custom tag**
+
+Now we can use our custom tag in the JSP:
+
+jsp
+<my:followers count="1500" />
+
+
+The tag would display:
+
+
+1.5K
+
+
+Another example:
+
+jsp
+<my:followers count="1500000" />
+
+
+Output:
+
+1.5M
+
+
+--> Simple Flow
+
+
+JSP Page
+   ↓
+Custom Tag
+   ↓
+Tag Library Descriptor (.tld)
+   ↓
+Tag Handler Java Class
+   ↓
+Formatted Output
+
+
+-->In Simple Words
+
+A custom JSP tag library lets us move reusable Java logic into a custom tag. In our Instagram-style example, 
+the JSP only needs to write `<my:followers count="1500" />`, while the tag handler handles the formatting and displays `1.5K`. 
+This makes JSP pages cleaner and avoids putting complex Java code directly inside the page.
