@@ -1,0 +1,14 @@
+<servlet>
+    <servlet-name>PlaylistServlet</servlet-name>
+    <servlet-class>com.jatin.servlets.PlaylistServlet</servlet-class>
+
+    <init-param>
+        <param-name>defaultGenre</param-name>
+        <param-value>Pop</param-value>
+    </init-param>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>PlaylistServlet</servlet-name>
+    <url-pattern>/playlist</url-pattern>
+</servlet-mapping>
