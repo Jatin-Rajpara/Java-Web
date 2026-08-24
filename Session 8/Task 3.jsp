@@ -20,3 +20,5 @@
 
 </body>
 </html>
+
+--> http://localhost:8080/YourProject/showProduct.jsp?name=Earbuds&price=1999
