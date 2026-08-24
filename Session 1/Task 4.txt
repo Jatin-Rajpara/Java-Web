@@ -1,0 +1,18 @@
+Task 4
+
+3 Differences
+
+
+Static Web Page : 
+-----------------
+
+--> Same content for every user
+--> No database required             
+--> Example: About Us page
+
+Dynamic Web Page :
+------------------
+
+--> Content changes for each user          
+--> Uses database 
+--> Example: Instagram Feed

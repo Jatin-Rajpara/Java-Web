@@ -1,0 +1,8 @@
+Task 5
+
+Example Answer
+
+1. User selects a movie and clicks the **Book Ticket** button in the browser.
+2. The browser sends an **HTTP Request** to the Java Servlet.
+3. The Java Servlet stores the booking details in the database.
+4. The database returns success, and the Servlet sends an **HTTP Response** confirming the booking to the browser.

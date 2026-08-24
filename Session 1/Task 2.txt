@@ -1,0 +1,35 @@
+Task 2
+
+Question:
+
+Open DevTools and find
+
+* URL
+* Method
+* Status Code
+
+Example :
+
+Website:
+https://www.zomato.com/
+
+Request URL:
+https://www.zomato.com/
+
+Method:
+GET
+
+Status:
+200 OK
+
+
+Ya Myntra 
+
+Request URL:
+https://www.myntra.com/
+
+Method:
+GET
+
+Status:
+200 OK

@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+</head>
+<body>
+
+<h1>My Profile</h1>
+
+<p><strong>Name:</strong> Jatin Rajpara</p>
+
+<p><strong>Favorite App:</strong> YouTube</p>
+
+<p>
+I am a B.Sc IT graduate learning Java Web Development.
+I enjoy creating Java projects and learning new technologies.
+</p>
+
+</body>
+</html>
+
+
+Observation:
+
+The page content remains the same every time it is opened.
+The content changes only when the HTML file is edited.
