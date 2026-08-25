@@ -1,4 +1,4 @@
-package com.jatin;
+package com.jatin.servlets;
 
 import java.io.IOException;
 
