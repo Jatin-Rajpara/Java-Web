@@ -1,0 +1,9 @@
+<servlet>
+    <servlet-name>ReviewServlet</servlet-name>
+    <servlet-class>com.jatin.servlet.Review</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>Review</servlet-name>
+    <url-pattern>/addreview</url-pattern>
+</servlet-mapping>
