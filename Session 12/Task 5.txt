@@ -1,0 +1,20 @@
+Short Note — Spring MVC
+
+
+Using Spring MVC restructures a Java web application from manual routing to a centralized, 
+annotation-driven architecture:
+
+--> Centralized Request Handling: Replaces multiple individual Servlets mapped in
+    web.xml with a single front controller (DispatcherServlet) that centralizes routing,
+    request mapping, and view resolution
+
+--> POJO-Based Controllers: Controllers become lightweight, plain Java classes configured
+    via annotations (like @Controller and @GetMapping), eliminating the need to directly 
+    extend HttpServlet or manually parse HTTP requests/responses.
+
+--> Clean Separation of Concerns & DI: Decouples business logic from presentation by
+    leveraging Spring's Dependency Injection (@Autowired), making services, models, and
+    views easy to swap, maintain, and unit test.
+
+
+   
